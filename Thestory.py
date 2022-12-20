@@ -38,11 +38,11 @@ def motive_truth():
     Option = input ("C: ... ")
     
     if Option == ("A"):
-        ("__")
+        running()
     elif Option == ("B"):
-        ("__")
+        cryptids()
     elif Option == ("C"):
-        ("__")
+        dotdotdot()
     else:
         print('Incorrect. Input one of the presented options.')        
       
@@ -56,11 +56,11 @@ def motive_lie():
     Option = input ("C: ... ")
 
     if Option == ("A"):
-        ("__")
+        running()
     elif Option == ("B"):
-        ("__")
+        cryptids()
     elif Option == ("C"):
-        ("__")
+        dotdotdot()
     else:
         print('Incorrect. Input one of the presented options.')   
 
@@ -74,8 +74,14 @@ def running():
     print ("B:[lie]'I don't have any family around anymore... I-it's a long story...'")
     Option = input ("C: ... ")
     
+    if Option == ("A"):
+        ("__")
+    elif Option == ("B"):
+        ("__")
+    elif Option == ("C"):
+        ("__")
+   
     
-
 def cryptids():
     print ("The Driver: 'Cryptids? Well then, you might have found the right place.")
     print ("There are many strange rumours about this highway... By the way. What's your name?'")
@@ -88,7 +94,26 @@ def cryptids():
     print ("B:[lie]'I don't have any family around anymore... I-it's a long story...")
     Option = input ("C: ... ")
 
+    if Option == ("A"):
+        ("__")
+    elif Option == ("B"):
+        ("__")
+    elif Option == ("C"):
+        ("__")
 
 
 def dotdotdot():    
-    print ("")
+    print ("The Driver: 'Not much of a talker are you?")
+    print ("Do you have any family that would be looking for you?'")
+    print ("A: 'My mother and my younger sister i'm afraid...")
+    print ("B:[lie]'I don't have any family left...'")
+    Option = input ("C: ...")
+    
+    if Option ==("A"):
+        ("__")
+    elif Option == ("B"):
+        ("__")
+    elif Option == ("C"):
+        ("__")
+ 
+    
