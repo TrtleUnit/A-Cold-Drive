@@ -14,7 +14,7 @@ def Mainmenu():
 
 def Opening():
 
-    print ("... It's a cold, snowy, dark night... You are biking right by a highway at a fast pace and your bike eventually breaks down.")
+    print ("... It's a cold, snowy, misty night... You are biking right by a highway at a fast pace and your bike eventually breaks down.")
     print ("You leave the bike in a snowy ditch and keep walking.")
     print ("You eventually reach a road sign right by the highway. You rest your arm against the sign and wait for a car to drive by.")
     print ("As soon as you see a car approach, you stick your thumb up. The car slows down and stops by the side of the highway...")
@@ -52,7 +52,7 @@ def motive_lie():
     print ("You step in the car. The driver looks friendly enough. He looks middle aged, sporting a brown beard and wearing a dark blue beanie.")
     print ("The Driver: 'So how did you get lost out there?'")
     print ("A: I was running away.")
-    print ("B: [lie] I was out trying to hunt down Cryptids")
+    print ("B: [lie]' I was out trying to hunt down Cryptids'")
     Option = input ("C: ... ")
 
     if Option == ("A"):
@@ -70,14 +70,25 @@ def running():
     print ("The Driver: 'Alright, calm down. I'm not acusing you of anything. What's your name, kid?")
     print ("Brandon: 'Brandon... My name is Brandon.'")
     print ("The Driver: 'Brandon? Personally i've always liked that name. Got any... Got any family around?'")
-    print ("A: I live with my mother and younger sister... But i can't be around them right now.")
-    print ("B:[lie]'I don't have any family around anymore... It's a long story.'")
+    print ("A:' I live with my mother and younger sister... But i can't be around them right now...'")
+    print ("B:[lie]'I don't have any family around anymore... I-it's a long story...'")
     Option = input ("C: ... ")
     
     
-    
+
 def cryptids():
-    print ("")
-    
+    print ("The Driver: 'Cryptids? Well then, you might have found the right place.")
+    print ("There are many strange rumours about this highway... By the way. What's your name?'")
+    print ("Brandon: My name is Brandon. i urm... I'm trying to go viral by discovering a cryptid on this misty road.")
+    print ("The Driver: 'Brandon... I have always liked that name... This road is mostly empty. I rarely see any other cars pass by.'")
+    print ("Brandon: 'How come. Cryptids scare them away?'")
+    print ("The Driver:'You could say that. But there are shorter roads into town.'")
+    print ("Tell me Brandon. Got any family around?'")
+    print ("A:'I live with my mother and younger sister... But i can't be around them right now...'")
+    print ("B:[lie]'I don't have any family around anymore... I-it's a long story...")
+    Option = input ("C: ... ")
+
+
+
 def dotdotdot():    
     print ("")
