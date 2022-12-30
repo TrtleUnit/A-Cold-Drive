@@ -10,7 +10,7 @@ def Mainmenu():
     elif Option == ("B"):
         print ("Goodbye")
     else:
-        print('Incorrect. Input one of the presented options.')
+        Mainmenu()
 
 def Opening():
 
@@ -28,11 +28,12 @@ def Opening():
     elif Option == ("B"):
         motive_lie()
     else:
-        print('Incorrect. Input one of the presented options.')
+        Opening()
         
 def motive_truth():
     print ("The Driver: 'I can help you out. There's a town not far from here. Hop in...")
     print ("You step in the car. The driver looks friendly enough. He looks middle aged, sporting a brown beard and wearing a dark blue beanie.")
+    print ("The Driver:'Tell me. What were you doing out there in the mist?'")
     print ("A: I was running away.")
     print ("B: [lie] I was out trying to hunt down Cryptids")
     Option = input ("C: ... ")
@@ -44,7 +45,8 @@ def motive_truth():
     elif Option == ("C"):
         dotdotdot()
     else:
-        print('Incorrect. Input one of the presented options.')        
+        motive_truth
+      
       
 def motive_lie():
     print ("The Driver: 'Is that so?")
@@ -60,26 +62,27 @@ def motive_lie():
     elif Option == ("B"):
         cryptids()
     elif Option == ("C"):
-        dotdotdot()
-    else:
-        print('Incorrect. Input one of the presented options.')   
+        dotdotdot()  
+    else: motive_lie    
 
 def running():
     print ("The Driver: 'Running from what. Did you do something?'")
     print ("You: 'No... I just... Need to get away. I didn't steal or kill anyone if that's what you're thinking!'")
     print ("The Driver: 'Alright, calm down. I'm not acusing you of anything. What's your name, kid?")
     print ("Brandon: 'Brandon... My name is Brandon.'")
-    print ("The Driver: 'Brandon? Personally i've always liked that name. Got any... Got any family around?'")
+    print ("The Driver: 'Brandon? Personally i've always liked that name... Got any... Got any family around?'")
     print ("A:' I live with my mother and younger sister... But i can't be around them right now...'")
     print ("B:[lie]'I don't have any family around anymore... I-it's a long story...'")
     Option = input ("C: ... ")
     
     if Option == ("A"):
-        ("__")
+        truth1()
     elif Option == ("B"):
-        ("__")
+        liar1()
     elif Option == ("C"):
-        ("__")
+        threedot()
+    else:
+        running()    
    
     
 def cryptids():
@@ -95,12 +98,13 @@ def cryptids():
     Option = input ("C: ... ")
 
     if Option == ("A"):
-        ("__")
+        truth1()
     elif Option == ("B"):
-        ("__")
+        liar1()
     elif Option == ("C"):
-        ("__")
-
+        threedot()
+    else:
+        cryptids()
 
 def dotdotdot():    
     print ("The Driver: 'Not much of a talker are you?")
@@ -110,10 +114,44 @@ def dotdotdot():
     Option = input ("C: ...")
     
     if Option ==("A"):
-        ("__")
+        truth1()
     elif Option == ("B"):
-        ("__")
+        liar1()
     elif Option == ("C"):
-        ("__")
- 
+        threedot2()
+    else: 
+        dotdotdot()    
+
+def truth1():
+    print ("The Driver: 'Do they know you're out here?'")
+    print ("Brandon: 'No... I can't talk with them... Not right now.'")
+    print ("The Driver: 'Sorry, kid... Time to go...")
+    print ("The Driver now begins to drive into the snowy mist...")
+    print ("The mist makes it impossible to see from the side mirrors. the only thing visible is the road")
+    print ("You look around the car. You notice a Santa Claus bobblehead on The Driver's dashboard, A radio playing soft Christmas tunes.")
+    print ("You feel both comfortable and on edge. You don't trust this stranger. But no bad signs have shown yet.")
+
+
+def liar1():
+    print ("The Driver: 'I'm sorry, kid. Do you have a home?")
+    print ("Brandon: 'urm... no i don't. I'm always on the road, y'know?'")
+    print ("The Driver: 'I see. We better get going.'")
+    print ("The Driver now begins to drive into the snowy mist...")
+    print ("The mist makes it impossible to see from the side mirrors. the only thing visible is the road")
+    print ("You look around the car. You notice a Santa Claus bobblehead on The Driver's dashboard, A radio playing soft Christmas tunes.")
+    print ("You feel both comfortable and on edge. You don't trust this stranger. But no bad signs have shown yet.")
     
+    
+def threedot():
+    print ("The Driver: 'aye... Touchy subject? very well. Let's go.'")
+    print ("The Driver now begins to drive into the snowy mist...")
+    print ("The mist makes it impossible to see from the side mirrors. the only thing visible is the road")
+    print ("You look around the car. You notice a Santa Claus bobblehead on The Driver's dashboard, A radio playing soft Christmas tunes.")
+    print ("You feel both comfortable and on edge. You don't trust this stranger. But no bad signs have shown yet.")    
+  
+    
+def threedot2():
+    print ("The Driver fully turns his eyes to the round when he sees that you give him no response. He refrains from asking more questions and starts driving into the mist. ")
+    print ("The mist makes it impossible to see from the side mirrors. the only thing visible is the road")
+    print ("You look around the car. You notice a Santa Claus bobblehead on The Driver's dashboard, A radio playing soft Christmas tunes.")
+    print ("You feel both comfortable and on edge. You don't trust this stranger. But no bad signs have shown yet.")
